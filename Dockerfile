@@ -15,15 +15,7 @@ RUN poetry config virtualenvs.create false \
   && poetry install
 
 # Make port 80 available to the world outside this container
-EXPOSE 8888
-
-
-
-
-# Run fast api app hold on port 5000
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
-
+EXPOSE 80
 
 # Run FastAPI app on port 5000
 # Run Jupyter notebook server when the container launches

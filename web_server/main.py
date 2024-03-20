@@ -3,8 +3,9 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from pydantic import BaseModel
 from typing import Optional, Dict, List
 from jinja2 import Template
+import os
 
-from api.funcionesAPI import (
+from web_server.funcionesAPI import (
     PlayTimeGenre,
     UserForGenre,
     UsersRecommend,
@@ -294,8 +295,8 @@ app = FastAPI(
 
 @app.get("/", tags=["Home"], status_code=200, response_class=HTMLResponse)
 def index():
-    # Carga la plantilla HTML
-    template = Template(open("/app/api/index.html").read())
+    # Carga la plantilla HTML con la ruta absoluta del archivo index.html
+    template = Template(open(os.path.dirname(__file__) + "/index.html").read())
 
     # Renderiza la plantilla HTML
     return template.render()
