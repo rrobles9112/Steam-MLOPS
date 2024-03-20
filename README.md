@@ -55,7 +55,7 @@ Una vez completadas las  etapas anteriores los datos se encuentran preparados pa
 
 ## Video
 En el siguiente enlace podras encontrar un video con un pequeño resumen acerca del proyecto
-#### Link: https://www.youtube.com/channel/UCrR9T1nEFfQpWviNudpueBw
+#### Link: https://youtu.be/qjlqanqAZRs
 
 ## Requisitos
 
