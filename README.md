@@ -75,9 +75,17 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 
 ## Para ejecutar este proyecto en cualquier sistema operativo mediante docker se debe de seguir los siguientes pasos:
 
+Para ejecutar la imagen docker, sigue los siguientes pasos:
 
+1. Clona el repositorio que contiene el archivo Dockerfile.
+2. Abre una terminal y navega hasta la ubicación del archivo Dockerfile.
+3. Ejecuta el siguiente comando para construir la imagen docker:
 ```bash
-docker pull rrobles9112/my-jupyter-app:latest
+docker build -t rrobles9112/my-jupyter-app:latest .
 ```
 
-#### Para el depligue en render escogi la opcion de conectar con repositorio docker
+Y luego para ejecutar el contenedor el comando:
+```bash
+docker run -p 80:80 rrobles9112/my-jupyter-app:latest
+```
+

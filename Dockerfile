@@ -17,7 +17,7 @@ RUN poetry config virtualenvs.create false \
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
-# Run FastAPI app on port 5000
+# Run FastAPI app on port 80
 # Run Jupyter notebook server when the container launches
 # Give execution rights to the entrypoint script
 RUN chmod +x /api/entrypoint.sh
